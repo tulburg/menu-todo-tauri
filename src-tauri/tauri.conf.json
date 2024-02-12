@@ -1,10 +1,10 @@
 {
   "build": {
-    "beforeDevCommand": "pnpm dev",
-    "beforeBuildCommand": "pnpm build",
-    "devPath": "http://localhost:1420",
+    "beforeDevCommand": "webpack serve --config webpack.config.js --mode development",
+    "beforeBuildCommand": "webpack --config webpack.config.js --mode production",
+    "devPath": "http://localhost:8082",
     "distDir": "../dist",
-    "withGlobalTauri": false
+    "withGlobalTauri": true
   },
   "package": {
     "productName": "tauri-menubar",
